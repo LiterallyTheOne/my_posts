@@ -31,8 +31,8 @@ This part shows how many users are connected to
 the system.
 
 In this case, there are two users connected to
-the system, one `sudo` and the other one is a
-normal user.
+the system, that you can see who are connected by
+typing `users` in terminal.
 
 ## Load average
 
