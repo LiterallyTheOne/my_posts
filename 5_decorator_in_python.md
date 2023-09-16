@@ -3,8 +3,8 @@
 ## Introduction
 
 You might have seen `@something` before a
-function in python and ask yourself, what
-does that mean. These `@something`s are called
+function in Python and ask yourself, what
+does that mean? These `@something`s are called
 `decorator`s. We use a `decorator` to modify a
 function without changing it.
 
@@ -47,7 +47,7 @@ if __name__ == '__main__':
 ```
 
 In this example, we have a function that calculates
-an area of a triangle (`calculate_triangle_area`).
+the area of a triangle (`calculate_triangle_area`).
 We want to make sure that the given triangle
 is a valid triangle. To do so, we define
 a `decorator` called `check_triangle_validation`
@@ -56,12 +56,12 @@ Then we have an inner function that is going to run instead
 of the `decorated` function that we call it `wrapper`.
 in `wrapper`, we check if every vertex is less than
 the sum of the other two. Then we execute the
-`decorated` function and finally we return the result.
+`decorated` function and finally, we return the result.
 
 If we run our function with values of `a=2,b=2,c=3`,
 we are going to have `7` as a result. But if we run
 our function with values of `a=1,b=1,c=3`, we are
-getting an `Exeption` that we defined in `if` statement
+getting an `Exception` that we defined in the `if` statement
 in our `wrapper`.
 
 ## Decorator with class
@@ -158,7 +158,7 @@ if __name__ == '__main__':
     main()
 ```
 
-We can stack up multiple `decorator`s. In this example we
+We can stack up multiple `decorator`s. In this example, we
 have three `decorators`. `check_valid_triangle` checks if
 every vertex is less than the other two. `check_positive_vertices`
 check if all vertices are positive. `change_meter_to_feet` changes
@@ -166,4 +166,3 @@ the calculated result from meter to feet.
 
 If we run `calculate_trinalge_area` with values of
 `a=2, b=2, c=3`, the result will be `22.96588`.
-
